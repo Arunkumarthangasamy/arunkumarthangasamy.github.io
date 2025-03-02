@@ -1,61 +1,43 @@
+---
+layout: default
 title: "Arunkumar Thangasamy"
-description: "Mechanical Engineer with expertise in quality management, analytics, and simulation tools."
-theme: jekyll-theme-minimal
-# Personal Information
-name: "Arunkumar Thangasamy"
-email: "arunkumartug1@outlook.com"
-phone: "+91 7530079988"
-linkedin: "https://www.linkedin.com/in/arunkumar-thangasamy"
-# Education
-education:
-  - degree: "Bachelor of Engineering (HONORS) – Mechanical Engineering"
-    university: "Anna University, Tamil Nadu, India"
-    gpa: "8.0"
-    duration: "August 2018 – July 2022"
-# Skills
-skills:
-  languages: [Python, JavaScript, SQL]
-  design_simulation: [SOLIDWORKS, CATIAV5, CREO, FLEXSIM]
-  project_tools: [Primavera P6, JIRA]
-  sap_tools: [SAP S4/HANA (MM)]
-  meshing_tools: [Ansys, Hypermesh]
-  analytics_tools: [PowerBI, Tableau, Azure DataBricks, MySQL]
-  diagnostics_tools: [Vector Hardware Manager, ETAS INCA, AUTOSAR, CANalyzer, UDS]
-  soft_skills: [Project Management, Stakeholder Management, People Management, Communication]
-# Work Experience
-experience:
-  - role: "Corporate Quality Executive"
-    company: "Apollo Tyres"
-    duration: "January 2025 - Present"
-    responsibilities:
-      - "Ensure product and process quality in manufacturing."
-      - "Manage quality systems (ISO 9001, IATF 16949)."
-      - "Automate workflows with PowerApps and Power Automate."
-      - "Analyze data using PowerBI, Tableau, MySQL, and Azure DataBricks."
+---
 
-  - role: "Product Quality Engineer"
-    company: "Bosch Limited"
-    duration: "November 2022 - December 2024"
-    responsibilities:
-      - "Handle customer complaints and product rejections."
-      - "Conduct product reliability testing and quality assessments."
-      - "Analyze field failures and create corrective measures."
-      - "Support audits (internal, customer, IATF, ISO)."
-# Certifications
-certifications:
-  - "IATF 16949:2016 Automotive Quality Management System (TÜV SÜD), February 2025"
-  - "Certified Reliability Professional (TÜV SÜD), December 2024"
-  - "Six Sigma Blackbelt (OTIFAS), January 2023"
-  - "Certified SolidWorks Design Associate (DCS), October 2021"
-  - "Certified ANSYS Professional (CADD CENTER), March 2022"
-# Projects
-projects:
-  - name: "Major Quality Violation (MQV)"
-    description: "Developed MQV software with AMES-integrated PowerApps to automate quality compliance."
-  - name: "QZ Test Bench & Chambers Relocation"
-    description: "Led relocation of QZ test benches from Korea to India for CC product testing."
-  - name: "APM Vehicle Level Sensor Failure Project"
-    description: "Performed fault tree analysis and root cause analysis for field failure prevention."
-# Social Links
-social:
-  linkedin: "https://www.linkedin.com/in/arunkumar-thangasamy"
+# About Me  
+**Name:** {{ Arunkumar }}  
+**Email:** [{{ site.email }}](mailto:{{ site.email }})  
+**Phone:** {{ site.phone }}  
+**LinkedIn:** [Profile]({{ site.linkedin }})  
+
+## Education  
+{% for edu in site.education %}
+- **{{ edu.degree }}**  
+  *{{ edu.university }}*  
+  GPA: {{ edu.gpa }}  
+  ({{ edu.duration }})  
+{% endfor %}
+
+## Skills  
+- **Programming Languages:** {{ site.skills.languages | join: ", " }}  
+- **Design & Simulation Tools:** {{ site.skills.design_simulation | join: ", " }}  
+- **Project Management Tools:** {{ site.skills.project_tools | join: ", " }}  
+- **Analytics & Data Tools:** {{ site.skills.analytics_tools | join: ", " }}  
+- **Soft Skills:** {{ site.skills.soft_skills | join: ", " }}  
+
+## Experience  
+{% for job in site.experience %}
+- **{{ job.role }}** at **{{ job.company }}** ({{ job.duration }})  
+  {% for task in job.responsibilities %}
+  - {{ task }}  
+  {% endfor %}
+{% endfor %}
+
+## Certifications  
+{% for cert in site.certifications %}
+- {{ cert }}
+{% endfor %}
+
+## Projects  
+{% for project in site.projects %}
+- **{{ project.name }}**: {{ project.description }}
+{% endfor %}
