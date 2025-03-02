@@ -1,20 +1,17 @@
-title: "Arunkumar's Resume"
+title: "Arunkumar Thangasamy"
 description: "Mechanical Engineer with expertise in quality management, analytics, and simulation tools."
 theme: jekyll-theme-minimal
-
 # Personal Information
 name: "Arunkumar Thangasamy"
 email: "arunkumartug1@outlook.com"
 phone: "+91 7530079988"
 linkedin: "https://www.linkedin.com/in/arunkumar-thangasamy"
-
 # Education
 education:
   - degree: "Bachelor of Engineering (HONORS) – Mechanical Engineering"
     university: "Anna University, Tamil Nadu, India"
     gpa: "8.0"
     duration: "August 2018 – July 2022"
-
 # Skills
 skills:
   languages: [Python, JavaScript, SQL]
@@ -25,7 +22,6 @@ skills:
   analytics_tools: [PowerBI, Tableau, Azure DataBricks, MySQL]
   diagnostics_tools: [Vector Hardware Manager, ETAS INCA, AUTOSAR, CANalyzer, UDS]
   soft_skills: [Project Management, Stakeholder Management, People Management, Communication]
-
 # Work Experience
 experience:
   - role: "Corporate Quality Executive"
@@ -45,7 +41,6 @@ experience:
       - "Conduct product reliability testing and quality assessments."
       - "Analyze field failures and create corrective measures."
       - "Support audits (internal, customer, IATF, ISO)."
-
 # Certifications
 certifications:
   - "IATF 16949:2016 Automotive Quality Management System (TÜV SÜD), February 2025"
@@ -53,7 +48,6 @@ certifications:
   - "Six Sigma Blackbelt (OTIFAS), January 2023"
   - "Certified SolidWorks Design Associate (DCS), October 2021"
   - "Certified ANSYS Professional (CADD CENTER), March 2022"
-
 # Projects
 projects:
   - name: "Major Quality Violation (MQV)"
@@ -62,7 +56,6 @@ projects:
     description: "Led relocation of QZ test benches from Korea to India for CC product testing."
   - name: "APM Vehicle Level Sensor Failure Project"
     description: "Performed fault tree analysis and root cause analysis for field failure prevention."
-
 # Social Links
 social:
   linkedin: "https://www.linkedin.com/in/arunkumar-thangasamy"
